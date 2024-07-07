@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #010203;
+  color: WHITE;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top:-22px ;
+}
+
+.navbar-brand img {
+  width: 120px;
+  margin-left: -20px;
+  padding-left: 20px;
+  color: white;
+}
+
+.navbar-nav li {
+  /* margin-top: 10px; */
+  margin-right: 50px;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+  color: yellow;
+}
+
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  border-color: #fff;
+  background-color: rgb(132, 132, 115);
+  border-radius: 2px;
+  margin-top: 40px;
+}
+.navbar-toggler-icon:hover {
+  background-color: #b4b3b3;
+}
+
+@media (max-width: 900px) {
+  .navbar-brand img {
+    display: none;
+  }
+  .navbar-nav li:hover {
+    background-color: rgb(48, 49, 45);
+  }
+}
+
+#home .row .col-md-6 {
+  margin: 0 auto;
+  padding-left: 30px;
+}
+#home .row {
+  padding-top: 100px;
+}
